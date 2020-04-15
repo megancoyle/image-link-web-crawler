@@ -10,7 +10,7 @@ class LinkItems(Item):
     status = Field()
 
 class LinkSpider(CrawlSpider):
-    name = "test-crawler"
+    name = "image-link-web-crawler"
     target_domains = ["sitehere.com"] # list of domains to crawl
     start_urls = url_list # list of starting urls to crawl
     handle_httpstatus_list = [404,410,301,500]
